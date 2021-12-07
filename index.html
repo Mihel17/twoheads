@@ -125,6 +125,11 @@
 		<h1 class="visually-hidden">just hidden h1 title...</h1>
 		<section class="promo">
 			<h2 class="visually-hidden">just hidden h2 title...</h2>
+			<div class="promo__bg">
+				<svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+					<polygon points="0 0, 50 50, 0 50"></polygon>
+				</svg>
+			</div>
 			<div class="promo__container  container">
 				<ul class="promo__slider  no-style">
 					<li class="promo__slide  promo__slide--active  row">
@@ -204,8 +209,7 @@
 								</ul>
 							</div>
 							<!-- / !calendar -->
-							<p class="promo__developers">DAILY OVERVIEW POWERED BY <a class="promo__developers-link" href="#">UNIFIED
-									ANALYTICS</a></p>
+
 						</div>
 					</li>
 					<!-- / promo__slide -->
@@ -223,13 +227,19 @@
 				</ul>
 				<!-- / promo__slider -->
 
-				<div class="promo__slider-controlers">
-					<button class="promo__slider-controler  promo__slider-controler--active" data-number="1"
-						aria-label="1 слайд"></button>
-					<button class="promo__slider-controler" data-number="2" aria-label="2 слайд"></button>
-					<button class="promo__slider-controler" data-number="3" aria-label="3 слайд"></button>
-				</div>
-				<!-- / promo__slider-controlers -->
+				<footer class="promo__footer">
+					<div class="promo__slider-controlers">
+						<button class="promo__slider-controler  promo__slider-controler--active" data-number="1"
+							aria-label="1 слайд"></button>
+						<button class="promo__slider-controler" data-number="2" aria-label="2 слайд"></button>
+						<button class="promo__slider-controler" data-number="3" aria-label="3 слайд"></button>
+					</div>
+					<!-- / promo__slider-controlers -->
+
+					<p class="promo__developers">DAILY OVERVIEW POWERED BY <a class="promo__developers-link" href="#">UNIFIED
+							ANALYTICS</a></p>
+				</footer>
+				<!-- promo__footer -->
 
 			</div>
 			<!-- / promo__container -->
