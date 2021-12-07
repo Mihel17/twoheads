@@ -78,6 +78,7 @@
   background-color: $grey-nav;
   color: white;
   border-radius: 50%;
+  transition: all 0.3s;
 }
 
 .main-nav__item a {
@@ -108,6 +109,9 @@
 .main-nav__item:active {
   a {
     color: $main-blue;
+  }
+  .main-nav__link-label {
+    background-color: $main-blue;
   }
 }
 
