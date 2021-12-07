@@ -1,0 +1,86 @@
+.calendar {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 350px;
+  min-height: 460px;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  background-color: $grey;
+  opacity: 0.99;
+  border-radius: 10px;
+  padding: 0 19px 24px 19px;
+
+  @media (min-width: 1200px) {
+    position: relative;
+    top: 39px;
+  }
+}
+
+.calendar__day {
+  text-align: center;
+  font-size: 140px;
+  font-weight: 600;
+  color: $main-blue;
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+
+.calendar__mounth {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 38px;
+}
+
+.calendar__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.calendar__days-item {
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $main-blue;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.calendar__days-item--active,
+.calendar__days-item:active {
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $main-blue;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: $main-blue;
+  border-radius: 50%;
+  color: white;
+  outline: 4px solid $main-blue;
+}
+
+.calendar__days-item:hover {
+  background-color: rgba($main-blue, 0.2);
+  outline: 4px solid rgba($main-blue, 0.2);
+  border-radius: 50%;
+  color: white;
+}

@@ -1,0 +1,43 @@
+.page {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.page__body {
+  min-height: 100vh;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  // grid-template-areas:
+  //   "header"
+  //   "main"
+  //   "footer";
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.page__header {
+  //   grid-area: header;
+  min-height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 100;
+  background-color: $promo-bg;
+}
+
+.page__main {
+  margin-top: 100px;
+  //   grid-area: main;
+}
+
+// .page__footer {
+//   grid-area: footer;
+// }

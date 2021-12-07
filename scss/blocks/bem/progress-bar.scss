@@ -1,0 +1,23 @@
+.progress-bar {
+  width: 159px;
+  flex-basis: 100%;
+  flex-grow: 1;
+  height: 4px;
+  background: $light-grey;
+  margin: 6px 0 0;
+  /* range */
+  --range-start: 0%;
+  --range-end: 60%;
+  --range-end-num: calc(var(--range-end) - var(--range-start));
+  /* range */
+}
+
+.progress-bar__fill {
+  position: relative;
+  /* range */
+  width: var(--range-end-num);
+  margin-left: var(--range-start);
+  /* range */
+  height: 4px;
+  background-color: $main-blue;
+}

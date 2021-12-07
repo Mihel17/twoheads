@@ -1,0 +1,41 @@
+@import "00-settings/*";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap");
+
+//TECHNICAL--------------------------
+//boostrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/containers";
+//mixin
+// @import "global/mixin.scss";
+//vars
+@import "global/vars.scss";
+//fonts
+// @import "global/fonts.scss";
+//global
+@import "global/technical.scss";
+//-----------------------------------
+
+//PAGE-------------------------------
+//main
+@import "blocks/big/page.scss";
+//header
+@import "blocks/big/main-header.scss";
+//-----------------------------------
+
+//SECTION---------------------------
+@import "blocks/main-nav.scss";
+//----------------------------------
+
+//SECTION HOME PAGE-----------------
+@import "blocks/promo.scss";
+//---------------------------------
+
+//BEM---------------------------
+@import "blocks/bem/user-bar.scss";
+@import "blocks/bem/progress-bar.scss";
+@import "blocks/bem/calendar.scss";
+@import "blocks/bem/drop-nav.scss";
+//----------------------------------
